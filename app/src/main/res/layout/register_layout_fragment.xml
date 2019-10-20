@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:ignore="UnusedAttribute,RtlSymmetry,ContentDescription">
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+      >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/profile_ic"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/ic_person" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/EditName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_40"
+                    android:layout_marginTop="15dp"
+                    android:drawableStart="@drawable/ic_person"
+                    android:drawablePadding="@dimen/dim_4"
+                    android:drawableTint="@color/black"
+                    android:hint="name"
+                    android:inputType="text"
+                    android:paddingStart="@dimen/dim_8"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.25"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_ic" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/EditEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_40"
+                    android:layout_marginTop="15dp"
+                    android:drawableStart="@drawable/ic_mail"
+                    android:drawablePadding="@dimen/dim_4"
+                    android:drawableTint="@color/black"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="@dimen/dim_8"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/EditName" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/updateProfileFragmentEditPhoneClient"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_40"
+                    android:layout_marginTop="15dp"
+                    android:drawableStart="@drawable/ic_phone"
+                    android:drawablePadding="@dimen/dim_4"
+                    android:drawableTint="@color/black"
+                    android:hint="@string/phone"
+                    android:inputType="date"
+                    android:paddingStart="@dimen/dim_8"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/EditEmail"
+                    tools:layout_editor_absoluteY="212dp" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Spinner
+        android:id="@+id/CitySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_40"
+        android:layout_marginTop="@dimen/dim_8"
+        android:gravity="center"
+        android:spinnerMode="dropdown" />
+    <ImageView
+        android:layout_marginTop="@dimen/dim_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home"/>
+
+</RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Spinner
+                    android:id="@+id/RegionSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:gravity="center"
+                    android:spinnerMode="dropdown" />
+                <ImageView
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_home"/>
+
+
+            </RelativeLayout>
+
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/EditPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_40"
+                    android:layout_marginTop="15dp"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:drawablePadding="@dimen/dim_4"
+                    android:drawableTint="@color/black"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:paddingStart="@dimen/dim_8"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/RegionSpinner" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/EnsurePassowrd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_40"
+                    android:layout_marginTop="15dp"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:drawablePadding="@dimen/dim_4"
+                    android:drawableTint="@color/black"
+                    android:hint="@string/confirm_password"
+                    android:inputType="textPassword"
+                    android:paddingStart="@dimen/dim_8"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.25"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/EditPassword" />
+
+                <Button
+                    android:id="@+id/SaveBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/shape_btn"
+                    android:text="Update"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_16"
+                     />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

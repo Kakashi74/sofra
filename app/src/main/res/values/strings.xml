@@ -1,0 +1,40 @@
+<resources>
+
+    <string name="app_name">Sofra</string>
+
+    <string name="Order_Food">طلب الطعام</string>
+
+    <string name="Sell_Food">بيع الطعام</string>
+
+    <string name="Login">تسجيل الدخول</string>
+
+    <string name="email">البريد الالكتروني</string>
+
+    <string name="password">كلمة السر</string>
+
+    <string name="forget_password">هل نسيت كلمة السر</string>
+
+    <string name="Log_in">الدخول</string>
+
+    <string name="Register">التسـجيل</string>
+
+    <string name="resturant_name">اسم المطعم </string>
+
+    <string name="phone">الهاتف</string>
+
+    <string name="confirm_password">تاكيد كلمة السر</string>
+
+    <string name="the_limit">الحد الادني للطلب</string>
+
+    <string name="delivert">رسوم التوصيل</string>
+
+    <string name="whatsApp">الواتس اب</string>
+
+
+
+
+
+
+
+
+</resources>

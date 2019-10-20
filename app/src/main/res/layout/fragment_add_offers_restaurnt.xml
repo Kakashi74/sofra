@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/rel1">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/top_toolbar"
+                android:background="@drawable/white_gray_border_bottom">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:id="@+id/calculator"
+                        android:src="@drawable/ic_cal"
+                        android:layout_alignParentStart="true"
+                        />
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:id="@+id/notification"
+                        android:src="@drawable/ic_notifications"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_below="@id/rel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Pic"
+        android:id="@+id/simple"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_shop"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/normalimage"
+        android:layout_below="@+id/simple"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/normalimage"
+        android:id="@+id/relative_bottom_stuff1"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/layout_borders"
+        >
+        <EditText
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="offer name"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:textAlignment="center"
+            android:id="@+id/offer_name"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:inputType="textNoSuggestions"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_bottom_stuff1"
+        android:id="@+id/relative_bottom_stuff2"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/layout_borders"
+        >
+        <EditText
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="offer Description"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:textAlignment="center"
+            android:id="@+id/offer_desc"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:inputType="textNoSuggestions"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relative3"
+        android:layout_below="@id/relative_bottom_stuff2"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <EditText
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:ems="8"
+            android:id="@+id/from"
+            android:gravity="center"
+            android:hint="from"
+            android:inputType="date"
+            android:padding="@dimen/dim_8"
+            android:textSize="@dimen/txt_size_16"
+            android:drawableEnd="@drawable/icon_calendar"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:ems="8"
+            android:id="@+id/to"
+            android:gravity="center"
+            android:hint="To"
+            android:inputType="date"
+            android:padding="@dimen/dim_8"
+            android:textSize="@dimen/txt_size_16"
+            android:drawableEnd="@drawable/icon_calendar"/>
+
+    </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Add_btn"
+        android:layout_marginTop="15dp"
+        android:text="Add"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/relative3"
+        android:background="@drawable/custom_shape_layout"/>
+
+
+</RelativeLayout>
